@@ -21,7 +21,7 @@ public class Snippet {
     ;
 
 
-    //Constructor
+    
     public Snippet(int id, String title, String content, String language, List<String> tags, LocalDateTime timestamp) {
         this.id = id;
         this.title = title;
@@ -32,7 +32,7 @@ public class Snippet {
     }
 
 
-    //Getters and Setters
+
     public int getId() {
         return id;
     }
@@ -121,8 +121,6 @@ public class Snippet {
         return title;
     }
 
-
-    //Methods for Tags
     public String getTagsAsString() {
         if (tags == null || tags.isEmpty()) {
             return "";
@@ -155,7 +153,6 @@ public class Snippet {
         }
     }
 
-
     public boolean isValid() {
 
 
@@ -166,3 +163,4 @@ public class Snippet {
         return isTitleValid && isContentValid;
     }
 }
+
